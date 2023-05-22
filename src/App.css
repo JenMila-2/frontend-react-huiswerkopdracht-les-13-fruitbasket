@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    font-family: Poppins, sans-serif;
+    padding: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+label {
+    display: block;
+    margin: 24px 16px;
 }
 
-.App-link {
-  color: #61dafb;
+textarea {
+    margin: 8px 0 0 0;
+    display: block;
+    border-radius: 5px;
+    border-color: darkgray;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+textarea::placeholder {
+    font-family: Poppins, sans-serif;
+    padding: 5px;
 }
+
+select {
+    display: block;
+    margin-top: 10px;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+input {
+    margin: 0 8px 0 8px;
+}
+
+legend {
+    font-weight: 500;
+}
+
+fieldset {
+    border: 2px solid #ededed;
+    border-radius: 4px;
+    margin: 16px 0;
+}
+
+form button, .reset-button {
+    align-self: center;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    background: rgb(2,62,45);
+    background: linear-gradient(90deg, rgba(2,62,45,0.9458158263305322) 0%, rgba(52,102,28,1) 35%);
+    color: white;
+    font-weight: bold;
+}
+
+.fruit-counters {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    border: solid 1px lightgray;
+    border-radius: 5px;
+    padding: 40px;
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.counter h2 {
+    margin-right: 10px;
+}
+
+.counter button {
+    height: 25px;
+    width: 25px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: white;
+    font-weight: bold;
+    background: rgb(38,120,97);
+    background: linear-gradient(90deg, rgba(38,120,97,0.9458158263305322) 0%, rgba(84,131,61,1) 35%);
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.time-slot {
+    display: flex;
+    flex-direction: row;
+}
+
+.time-slot input {
+    margin: 5px 5px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    margin-left: -3px;
+ }
